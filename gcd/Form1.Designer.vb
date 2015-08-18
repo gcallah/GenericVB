@@ -27,6 +27,8 @@ Partial Class Form1
         Me.FirstNumBox = New System.Windows.Forms.TextBox()
         Me.ScndNumBox = New System.Windows.Forms.TextBox()
         Me.CalcButton = New System.Windows.Forms.Button()
+        Me.AnswerLbl = New System.Windows.Forms.Label()
+        Me.AnswerBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'FirstNumLbl
@@ -63,25 +65,43 @@ Partial Class Form1
         '
         'CalcButton
         '
-        Me.CalcButton.Location = New System.Drawing.Point(136, 149)
+        Me.CalcButton.Location = New System.Drawing.Point(145, 152)
         Me.CalcButton.Name = "CalcButton"
         Me.CalcButton.Size = New System.Drawing.Size(75, 23)
         Me.CalcButton.TabIndex = 4
         Me.CalcButton.Text = "Calculate"
         Me.CalcButton.UseVisualStyleBackColor = True
         '
+        'AnswerLbl
+        '
+        Me.AnswerLbl.AutoSize = True
+        Me.AnswerLbl.Location = New System.Drawing.Point(47, 201)
+        Me.AnswerLbl.Name = "AnswerLbl"
+        Me.AnswerLbl.Size = New System.Drawing.Size(58, 17)
+        Me.AnswerLbl.TabIndex = 5
+        Me.AnswerLbl.Text = "Answer:"
+        '
+        'AnswerBox
+        '
+        Me.AnswerBox.Location = New System.Drawing.Point(175, 201)
+        Me.AnswerBox.Name = "AnswerBox"
+        Me.AnswerBox.Size = New System.Drawing.Size(100, 22)
+        Me.AnswerBox.TabIndex = 6
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(356, 292)
+        Me.ClientSize = New System.Drawing.Size(493, 328)
+        Me.Controls.Add(Me.AnswerBox)
+        Me.Controls.Add(Me.AnswerLbl)
         Me.Controls.Add(Me.CalcButton)
         Me.Controls.Add(Me.ScndNumBox)
         Me.Controls.Add(Me.FirstNumBox)
         Me.Controls.Add(Me.ScndNumLbl)
         Me.Controls.Add(Me.FirstNumLbl)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Greatest Common Denominator"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -92,4 +112,6 @@ Partial Class Form1
     Friend WithEvents FirstNumBox As TextBox
     Friend WithEvents ScndNumBox As TextBox
     Friend WithEvents CalcButton As Button
+    Friend WithEvents AnswerLbl As Label
+    Friend WithEvents AnswerBox As TextBox
 End Class
