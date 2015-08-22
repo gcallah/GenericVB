@@ -67,7 +67,7 @@ Partial Class Form1
         '
         Me.CalcButton.Location = New System.Drawing.Point(145, 152)
         Me.CalcButton.Name = "CalcButton"
-        Me.CalcButton.Size = New System.Drawing.Size(75, 23)
+        Me.CalcButton.Size = New System.Drawing.Size(96, 29)
         Me.CalcButton.TabIndex = 4
         Me.CalcButton.Text = "Calculate"
         Me.CalcButton.UseVisualStyleBackColor = True
