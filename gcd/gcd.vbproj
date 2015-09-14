@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ED37C6BA-2BC4-4779-ADEA-ED89A30732D6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>gcd.My.MyApplication</StartupObject>
-    <RootNamespace>gcd</RootNamespace>
-    <AssemblyName>gcd</AssemblyName>
+    <StartupObject>GenericVB.My.MyApplication</StartupObject>
+    <RootNamespace>GenericVB</RootNamespace>
+    <AssemblyName>GenericVB</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>gcd.xml</DocumentationFile>
+    <DocumentationFile>GenericVB.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>gcd.xml</DocumentationFile>
+    <DocumentationFile>GenericVB.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

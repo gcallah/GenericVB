@@ -29,45 +29,52 @@ Partial Class Form1
         Me.CalcButton = New System.Windows.Forms.Button()
         Me.AnswerLbl = New System.Windows.Forms.Label()
         Me.AnswerBox = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MsgBox = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'FirstNumLbl
         '
         Me.FirstNumLbl.AutoSize = True
-        Me.FirstNumLbl.Location = New System.Drawing.Point(44, 50)
+        Me.FirstNumLbl.Location = New System.Drawing.Point(33, 41)
+        Me.FirstNumLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.FirstNumLbl.Name = "FirstNumLbl"
-        Me.FirstNumLbl.Size = New System.Drawing.Size(91, 17)
+        Me.FirstNumLbl.Size = New System.Drawing.Size(67, 13)
         Me.FirstNumLbl.TabIndex = 0
         Me.FirstNumLbl.Text = "First number:"
         '
         'ScndNumLbl
         '
         Me.ScndNumLbl.AutoSize = True
-        Me.ScndNumLbl.Location = New System.Drawing.Point(44, 92)
+        Me.ScndNumLbl.Location = New System.Drawing.Point(33, 75)
+        Me.ScndNumLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.ScndNumLbl.Name = "ScndNumLbl"
-        Me.ScndNumLbl.Size = New System.Drawing.Size(112, 17)
+        Me.ScndNumLbl.Size = New System.Drawing.Size(85, 13)
         Me.ScndNumLbl.TabIndex = 1
         Me.ScndNumLbl.Text = "Second number:"
         '
         'FirstNumBox
         '
-        Me.FirstNumBox.Location = New System.Drawing.Point(175, 50)
+        Me.FirstNumBox.Location = New System.Drawing.Point(131, 41)
+        Me.FirstNumBox.Margin = New System.Windows.Forms.Padding(2)
         Me.FirstNumBox.Name = "FirstNumBox"
-        Me.FirstNumBox.Size = New System.Drawing.Size(100, 22)
+        Me.FirstNumBox.Size = New System.Drawing.Size(76, 20)
         Me.FirstNumBox.TabIndex = 2
         '
         'ScndNumBox
         '
-        Me.ScndNumBox.Location = New System.Drawing.Point(175, 92)
+        Me.ScndNumBox.Location = New System.Drawing.Point(131, 75)
+        Me.ScndNumBox.Margin = New System.Windows.Forms.Padding(2)
         Me.ScndNumBox.Name = "ScndNumBox"
-        Me.ScndNumBox.Size = New System.Drawing.Size(100, 22)
+        Me.ScndNumBox.Size = New System.Drawing.Size(76, 20)
         Me.ScndNumBox.TabIndex = 3
         '
         'CalcButton
         '
-        Me.CalcButton.Location = New System.Drawing.Point(145, 152)
+        Me.CalcButton.Location = New System.Drawing.Point(109, 119)
+        Me.CalcButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CalcButton.Name = "CalcButton"
-        Me.CalcButton.Size = New System.Drawing.Size(96, 29)
+        Me.CalcButton.Size = New System.Drawing.Size(72, 24)
         Me.CalcButton.TabIndex = 4
         Me.CalcButton.Text = "Calculate"
         Me.CalcButton.UseVisualStyleBackColor = True
@@ -75,24 +82,46 @@ Partial Class Form1
         'AnswerLbl
         '
         Me.AnswerLbl.AutoSize = True
-        Me.AnswerLbl.Location = New System.Drawing.Point(47, 201)
+        Me.AnswerLbl.Location = New System.Drawing.Point(35, 163)
+        Me.AnswerLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.AnswerLbl.Name = "AnswerLbl"
-        Me.AnswerLbl.Size = New System.Drawing.Size(58, 17)
+        Me.AnswerLbl.Size = New System.Drawing.Size(45, 13)
         Me.AnswerLbl.TabIndex = 5
         Me.AnswerLbl.Text = "Answer:"
         '
         'AnswerBox
         '
-        Me.AnswerBox.Location = New System.Drawing.Point(175, 201)
+        Me.AnswerBox.Location = New System.Drawing.Point(131, 163)
+        Me.AnswerBox.Margin = New System.Windows.Forms.Padding(2)
         Me.AnswerBox.Name = "AnswerBox"
-        Me.AnswerBox.Size = New System.Drawing.Size(100, 22)
+        Me.AnswerBox.Size = New System.Drawing.Size(76, 20)
         Me.AnswerBox.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 210)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "Message:"
+        '
+        'MsgBox
+        '
+        Me.MsgBox.Location = New System.Drawing.Point(131, 210)
+        Me.MsgBox.Name = "MsgBox"
+        Me.MsgBox.ReadOnly = True
+        Me.MsgBox.Size = New System.Drawing.Size(200, 20)
+        Me.MsgBox.TabIndex = 8
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(493, 328)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(370, 266)
+        Me.Controls.Add(Me.MsgBox)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.AnswerBox)
         Me.Controls.Add(Me.AnswerLbl)
         Me.Controls.Add(Me.CalcButton)
@@ -100,6 +129,7 @@ Partial Class Form1
         Me.Controls.Add(Me.FirstNumBox)
         Me.Controls.Add(Me.ScndNumLbl)
         Me.Controls.Add(Me.FirstNumLbl)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Greatest Common Denominator"
         Me.ResumeLayout(False)
@@ -114,4 +144,6 @@ Partial Class Form1
     Friend WithEvents CalcButton As Button
     Friend WithEvents AnswerLbl As Label
     Friend WithEvents AnswerBox As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents MsgBox As TextBox
 End Class
