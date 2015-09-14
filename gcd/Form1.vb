@@ -1,6 +1,4 @@
-﻿Imports MathFuncs = gcd.math
-
-Public Class Form1
+﻿Public Class Form1
     Private Sub CalcButton_Click(sender As Object, e As EventArgs) Handles CalcButton.Click
         Dim num1, num2 As Integer
         Dim notHaveNums As Boolean
