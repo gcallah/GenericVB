@@ -3,12 +3,13 @@
     Public Class MathFuncs
 
         Public Shared Function gcd(ByVal a, ByVal b) As Integer
-            Do While (b <> 0)
-                a = a Mod b
-                Swap(a, b)
-                ' Swap(a, b)
-            Loop
-            Return a
+            a = a Mod b
+            Swap(a, b)
+            If b = 0 Then
+                Return a
+            Else
+                Return gcd(a, b)
+            End If
         End Function
 
         Public Shared Sub Swap(Of T)(ByRef a As T, ByRef b As T)
